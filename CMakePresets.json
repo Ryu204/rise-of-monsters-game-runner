@@ -1,0 +1,25 @@
+{
+    "$schema": "https://cmake.org/cmake/help/latest/_downloads/3e2d73bff478d88a7de0de736ba5e361/schema.json",
+    "version": 10,
+    "configurePresets": [
+        {
+            "name": "bare-minimum",
+            "binaryDir": "build/bare-minimum"
+        },
+        {
+            "name": "dev",
+            "binaryDir": "build/dev",
+            "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS": true,
+                "RISE_OF_MONSTERS_GAME_RUNNER_BUILD_TESTS": true
+            }
+        },
+        {
+            "name": "release",
+            "binaryDir": "build/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ]
+}
