@@ -1,0 +1,4 @@
+[submodule "extern/sockpp"]
+	path = extern/sockpp
+	url = git@github.com:fpagliughi/sockpp.git
+	branch = v1.x
